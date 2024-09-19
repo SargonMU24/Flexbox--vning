@@ -1,0 +1,46 @@
+/* Styla container för att använda flexbox */
+.container {
+    display: flex;
+    flex-direction: column; /* Ändra till 'column' för att placera elementen vertikalt */
+    justify-content: space-between; /* Justera elementens position */
+    height: 100vh; /* Gör så att containern fyller hela höjden */
+    border: 2px solid black;
+}
+
+/* Styla barnen i flexboxen */
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: 2px solid darkblue;
+}
+
+/* Justera ordningen på elementen med 'order' */
+.item-1 {
+    order: 2;
+}
+
+.item-2 {
+    order: 3;
+}
+
+.item-3 {
+    order: 1;
+}
+
+/* Använd align-self för att justera enskilda barns positioner vertikalt */
+.item-1 {
+    align-self: flex-start;
+}
+
+.item-2 {
+    align-self: center;
+}
+
+.item-3 {
+    align-self: flex-end;
+}
